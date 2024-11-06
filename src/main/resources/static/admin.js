@@ -38,13 +38,14 @@
 
     addForm.addEventListener('submit', addUser)
 
-    function addUser() {
+    async function addUser() {
     let nameValue = document.getElementById("firstname").value;
     let surnameValue = document.getElementById("lastname").value;
     let ageValue = document.getElementById("age").value;
     let emailValue = document.getElementById("email").value;
     let passwordValue = document.getElementById("password").value;
-    let roles = getRoles(Array.from(document.getElementById("addRoles").selectedOptions).map(role => role.value));
+    let roles = getRoles(Array.from(document.getElementById("addRoles")
+        .selectedOptions).map(role => role.value));
 
     let newUser = {
     name: nameValue,
@@ -139,7 +140,8 @@
     let ageValue = document.getElementById("ageEdit").value;
     let emailValue = document.getElementById("emailEdit").value;
     let passwordValue = document.getElementById("passwordEdit").value;
-    let roles = getRoles(Array.from(document.getElementById("editRoles").selectedOptions).map(role => role.value));
+    let roles = getRoles(Array.from(document.getElementById("editRoles")
+        .selectedOptions).map(role => role.value));
 
     let user = {
     id: idValue,
