@@ -167,7 +167,7 @@
 }
 
     const adminData = document.getElementById("data-admin");
-    const urlAuth = "http://localhost:8080/v1/users/auth";
+    const urlAuth = "http://localhost:8088/v1/users/auth";
     const panel = document.getElementById("admin-panel");
 
     function userAuthInfo() {
