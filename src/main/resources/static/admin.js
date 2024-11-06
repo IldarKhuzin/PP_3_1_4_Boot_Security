@@ -59,15 +59,15 @@
     fetch(url, {
     method: "POST",
     headers: {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json;charset=UTF-8'
-},
-    body: JSON.stringify(newUser)
-})
-    .then(() => {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json;charset=UTF-8'
+            },
+        body: JSON.stringify(newUser)
+    })
+        .then(() => {
     document.getElementById("usersTable").click();
     getAllUsers();
-})
+        })
 }
 
     function getRoles(rols) {
